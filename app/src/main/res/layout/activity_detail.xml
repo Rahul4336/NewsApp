@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Detail_Activity">
+
+    <RelativeLayout
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?selectableItemBackgroundBorderless"
+            android:onClick="back"
+            android:padding="15sp"
+            android:src="@drawable/ic_back" />
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/showcat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-black"
+            android:padding="8sp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/brand"
+            android:indeterminateTint="@color/black"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/brand"
+            android:background="@drawable/brand_border"
+            android:textSize="11sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:padding="8sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/detail_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/titletxt"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="10sp"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:padding="10sp"
+                    android:text="Rahul Kasgar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:onClick="shareNow"
+                    android:gravity="center"
+                    android:background="@drawable/share_border"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:layout_marginRight="20sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/black"
+                    android:padding="10sp"
+                    android:text="SHARE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#7A7A7A"
+                android:text="description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_margin="30dp"
+                android:background="#1C1C1C"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"/>
+
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#7A7A7A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
